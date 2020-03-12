@@ -1,0 +1,571 @@
+
+.container {
+    max-width: 1200px;
+}
+
+.section-text {
+    font-family: 'Poppins', sans-serif;
+    margin:  80px auto ;
+
+
+}
+
+.section-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+
+}
+
+.section-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: grey;
+}
+
+
+
+/*Navigation*/
+
+
+
+.nav-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.40);
+    width: 100%;
+
+}
+.nav-top, .nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+      
+}
+
+
+.nav-top {
+    border-bottom: 1px solid #515151;
+    padding-top: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.nav-bottom {
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+
+
+.nav-top, .nav-bottom li a {
+    color: honeydew;
+    font-size: 13px;
+   
+   
+}
+.contacts a {
+    color: white;
+     
+}
+
+.contacts a:hover {
+    text-decoration: none;
+}
+
+.social a {
+
+    color: white;
+}
+
+.banner-area {
+    background-image: url(../img/banner-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+
+.overlay-bg {
+        
+    background-color: rgba(0,0,0,0.40);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.banner-content {
+    color: white;
+    text-align: center;
+    margin-top: 360px;
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.banner-content h1 {
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.btn-warning {
+    background-color:#c7b169;
+    border: 1px solid #c7b169;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+.btn-warning:hover, .btn-warning:active {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.5s;
+} 
+
+
+
+
+
+
+
+/*Service-area */
+
+
+
+.row_services {
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-between;
+   padding-top: 50px;
+   align-content: center;
+}
+
+.single-service {
+    width: 350px;
+   text-align: center;
+   border: 1px solid #eee;
+   border-radius: 10px; 
+   padding: 25px;
+   height: 203px;
+   font-size: 16px;
+}
+
+.single-service:hover  {
+   background-color: black;
+   color:  #666666;
+   font-weight: 400;
+
+}
+
+.single-service h4 {
+    font-family: "Poppins",sans-serif;
+    color: black;
+    font-size: 20px;
+    
+}
+
+/*Исправить окрашивание h4 в желтый при наведении на весь single-service */
+
+.single-service h4:hover {
+    color: #c7b169;
+    text-decoration: none;
+}
+
+
+
+.single-service h4:hover {
+    color: #c7b169;
+    text-decoration: none;
+}
+
+/* Works area*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.single-gallery { 
+    position: relative;
+    text-align: center;
+	position: relative;
+	display: inline-block;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.single-gallery:before  {
+    content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+
+}
+
+.single-gallery:hover:before {
+    opacity: 1;
+
+}
+
+.single-gallery:after {
+	content: "";
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	bottom: 30px;
+	right: 30px;
+	border: 2px solid #ccc;
+	transform: scale(0);
+	opacity: 0;
+	-webkit-transition: all 0.8s ease 0s;
+	transition: all 0.8s ease 0s;
+}
+.single-gallery:hover:after {
+	opacity: 1;
+	transform: scale(1);
+}
+.single-gallery a {
+	
+	position: absolute;
+	z-index: 3;
+}
+
+.single-gallery .figcaption {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 1.1em;
+	opacity: 0;
+}
+.single-gallery h3 {
+    color: #fff;
+    position: absolute;
+    z-index: 4;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 1px;
+    margin: 0;
+    color: white;
+	text-transform: uppercase;
+	transform: scale(0);
+	-webkit-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+}
+
+.single-gallery:hover, .figcaption, .single-gallery:hover h3 {
+	transform: scale(1);
+	opacity: 1;
+}
+@media only screen and (max-width:990px) {
+	.single-gallery {
+		margin-bottom: 20px;
+	}
+}
+
+/*Почему не отображается надпись при наведении? */
+
+.figcaption h3 span {
+	display: block;
+	font-size: 0.7em;
+	font-weight: 400;
+	
+}
+
+
+/*Project area*/
+
+.row_projects {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding-top: 50px;
+    align-content: center; 
+    padding-bottom: 120px;
+   
+}
+
+/*Feauture-area*/
+
+.feauture-area {  
+    background-color: #c7b169;
+
+}
+
+.feauture-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin-bottom: 100px;
+    
+}
+
+.single-feature {   
+    background-color: #fff;
+    max-width: 330px;
+    text-align: left;
+    border: 1px solid #eee;
+    border-radius: 10px; 
+    position: relative;
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #666666;
+
+}
+
+/*Как окрасить заголовок на желтый при :hover*/
+
+.single-feature:hover {
+    background-color: black;
+    border: 1px solid black ;
+    color: #c7b169;
+
+}
+
+.feauture-area h2 {
+    color: white;
+    font-family: "Poppins",sans-serif;
+    
+}
+
+.single-feature h4 {
+    font-size: 20px;
+    color: black;
+    font-family: "Poppins",sans-serif;
+
+}
+
+.single-feature h4:hover {
+    color: #c7b169;
+ 
+}
+
+.single-feature p {
+    font-family: "Poppins",sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #666666 !important;
+}
+
+
+/* Testimonial area*/
+
+
+.single-testimonial {
+    text-align: center;
+    border: 1px solid #CDC775;
+    border-radius: 10px; 
+    position: relative;
+    padding: 25px;
+    font-size: 14px;   
+}
+
+.content_img {
+    background-image: url(../img/call-action-bg.jpg) ;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: relative;
+    height: 450px;
+
+}
+
+.single-testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.thumb {
+    display: flex;
+    font-family: "Poppins",sans-serif;
+}
+
+.thumb p {
+    padding-left: 15px;
+}
+
+.testimonial-carusel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 20px;
+
+}
+
+/*Почему вылез Оверлей за пределы картинки*/
+
+.content_img_overlay {
+    background-color: rgba(0,0,0,0.40);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 12px;
+
+}
+
+.callto-action-area {
+    padding: 50px;
+}
+
+/*Забыла как сделать надпись выше чем оверлей */
+
+
+.callto-action-wrap h1 {
+    color: white;
+    padding-top: 7rem;
+    font-family: "Poppins",sans-serif;
+    z-index: 3;
+    
+}
+
+.callto-action-wrap p {
+    color: white;
+    font-family: "Poppins",sans-serif;
+}
+
+
+
+/*Blog area */
+
+
+
+.active-blog-carusel {
+   display: flex;
+   margin-bottom: 120px;
+}
+
+
+.details {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.details h4 {
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins",sans-serif;
+}
+
+/*Как поставить кнопки списка на левый край   */
+.tags li {
+     display: inline;
+     border: 1px solid grey;
+     left: 0;
+     padding: 5px 5px 5px 5px;
+     margin-left: 5px;
+     text-decoration: none;
+} 
+
+.tags a {
+    color: grey;
+    text-decoration: none;
+
+}
+
+.tags li:hover {
+    background-color: #c7b169;
+    border: 1px solid #c7b169;
+    color: #fff !important;
+}
+
+.tags a:hover {
+    color: grey;
+    text-decoration: none;
+    color: white;
+}
+
+.date {
+    font-family: "Poppins",sans-serif;
+    color: #515151;
+}
+
+
+/*Brand-area*/
+
+
+.brand-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #f9f9ff;
+    position: relative;
+}
+
+/*Как сделать желтый логотип при наведение, если по умолчанию он серый*/
+
+/*Footer area */
+
+footer {
+    margin: 80px auto 80px;
+
+}
+
+.single-footer-widget {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.single-footer-widget h5 {
+    font-family: "Poppins",sans-serif; 
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.single-footer-widget p {
+    font-family: "Poppins",sans-serif; 
+    color: #666666;
+
+}
+
+.footer-copyright {
+    font-family: "Poppins",sans-serif; 
+    color: #666666;
+}
+
+.btn-outline-yellow {
+    background-color: #c7b169;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Poppins",sans-serif; 
+}
