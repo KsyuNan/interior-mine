@@ -319,8 +319,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
-    justify-content: space-between;
+ 
     margin-bottom: 100px;
+    
     
 }
 
@@ -332,13 +333,11 @@
     border-radius: 10px; 
     position: relative;
     padding: 30px;
-    margin-bottom: 30px;
+    margin: 15px;
     font-size: 15px;
     color: #666666;
 
 }
-
-/*Как окрасить заголовок на желтый при :hover*/
 
 .single-feature:hover {
     background-color: black;
@@ -347,7 +346,7 @@
 
 }
 
-.feauture-area h2 {
+.feauture-area  h2 {
     color: white;
     font-family: "Poppins",sans-serif;
     
@@ -360,8 +359,9 @@
 
 }
 
-.single-feature h4:hover {
+.single-feature:hover a h4 {
     color: #c7b169;
+    text-decoration: none;
  
 }
 
